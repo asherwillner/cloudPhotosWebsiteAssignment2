@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.nav {
+  margin: 30px;
+}
+
+.nav-link {
+  margin: 15px;
+}
+
+.nav-link:hover {
+  color: gray;
+  cursor: pointer;
+}
