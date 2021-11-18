@@ -15,7 +15,7 @@ export default function SearchPage() {
 
     const searchImages = () => {
         if (search !== "") {
-            axios.get(`${baseUrl}/search?q=${search}`, headers).then(res => {                
+            axios.get(`${baseUrl}/search?q=${search}`, headers).then(res => {
                 setImages(res.data);
                 setSearch("");
                 setSearched(true);
@@ -60,6 +60,7 @@ export default function SearchPage() {
     return (
         <div>
             <div className="search-field">
+                Hello
                 <button onClick={handleClick}>{isRecording ? "Stop Recording" : "Record"}</button>
                 <input value={search} onChange={(e) => {
                     setSearch(e.target.value)
